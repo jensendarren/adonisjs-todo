@@ -24,9 +24,15 @@ Let's say you want to make a new controller, then use the CLI to do that:
 adonis make:controller User
 ```
 
+Making new models is similar except we generally must pass `-m` to ensure that a migration is created:
+
+```
+adonis make:model Project -m
+
+```
+
 If you need to run database migrations then, again, use the CLI:
 
 ```
 adonis migration:run
 ```
-
