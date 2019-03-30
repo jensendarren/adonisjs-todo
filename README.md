@@ -31,6 +31,12 @@ adonis make:model Project -m
 
 ```
 
+We can also make custom exceptions very easily using the CLI as follows:
+
+```
+adonis make:exception InvalidAccess
+```
+
 If you need to run database migrations then, again, use the CLI:
 
 ```
