@@ -6,7 +6,6 @@ const AuthorizationService = use ('App/Services/AuthorizationService')
 class ProjectController {
   async index({ auth }) {
     const user = await auth.getUser();
-    console.log(user);
     return user.projects().fetch();
   }
 
