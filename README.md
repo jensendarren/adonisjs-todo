@@ -50,6 +50,22 @@ If you need to run database migrations then, again, use the CLI:
 adonis migration:run
 ```
 
+### Debugging the app via the adonis REPL
+
+Similar to `rails console` in adonis you can start a console session using `adonis repl` CLI command.
+
+Then in the `REPL` session you can run something like:
+
+```
+const User = use('App/Models/User');
+user = await User.find(1)
+user
+
+const Project = use('App/Models/Project');
+project = await Project.first()
+project
+```
+
 ### Enable Database Debugging
 
 Check out the instructions on the Adonis website to [enable debugging at the database](https://adonisjs.com/docs/4.1/database#_debugging).
