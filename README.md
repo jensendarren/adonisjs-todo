@@ -42,3 +42,7 @@ If you need to run database migrations then, again, use the CLI:
 ```
 adonis migration:run
 ```
+
+### Enable Database Debugging
+
+Check out the instructions on the Adonis website to [enable debugging at the database](https://adonisjs.com/docs/4.1/database#_debugging).
